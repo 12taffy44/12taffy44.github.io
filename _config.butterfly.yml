@@ -11,6 +11,7 @@ menu:
   归档: /archives/ || fas fa-archive
   分类: /categories/ || fas fa-folder-open
   标签: /tags/ || fas fa-tags
+  推荐: /recommend/ || fas fa-star
   关于: /about/ || fas fa-heart
 
 # 社交图标（去掉注释即可显示）
@@ -71,3 +72,19 @@ aside:
   card_announcement: # 新增，与 card_author 同级 
     enable: true # 默认就是 true；设 false 可整块关掉 
     content: 关注塔菲喵,关注塔菲谢谢喵
+
+# _config.butterfly.yml
+archive_img: /img/gbc.webp
+
+# 顶部图高度
+index_top_img_height: 100vh # 首页大图铺满首屏；想让它矮一点就改成 60vh / 500px
+
+# 目录（正文右侧的悬浮目录）
+toc:
+  page: true # 让页面（/recommend/、/about/ 等）也显示目录；文章默认就有
+
+# 注入自定义样式：内页顶部图铺满首屏（主题默认 400px，手机 280px）
+inject:
+  head:
+    - '<style>body #page-header.not-home-page{height:100vh}</style>'
+
