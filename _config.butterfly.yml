@@ -19,24 +19,26 @@ social:
   # fas fa-envelope: mailto:you@example.com || Email || '#4a7dbe'
 
 # 站点图标（替换成自己的图片时，把图片放到 source/img/ 下并修改路径）
-favicon: /img/favicon.ico
+favicon: /img/miku.jpg
+
+index_img: /img/miku.jpg
 
 # 头像
 avatar:
-  img: /img/butterfly-icon.png
+  img: /img/chuhua.jpg
   effect: false
 
 # 404 页面
 error_404:
   enable: true
-  subtitle: 页面没有找到
+  subtitle: 找不到了喵ww
 
 # 首页打字机副标题（想要就取消注释并填入文字）
-# subtitle:
-#   enable: true
-#   effect: true
-#   sub:
-#     - 今天也要加油鸭
+subtitle:
+  enable: true
+  effect: true
+  sub:
+    - 没有太晚的开始,只有太早的放弃
 
 # 本地搜索（依赖 hexo-generator-searchdb）
 search:
@@ -56,3 +58,16 @@ footer:
   owner:
     enable: true
     since: 2026
+
+aside:
+  card_author:
+    enable: true
+    description: 誓死效忠丰川祥子
+    button:
+      enable: true
+      icon: fas fa-user
+      text: 了解我喵
+      link: /about/     # 默认是 https://github.com/xxxxxx ，改成关于页更合适
+  card_announcement: # 新增，与 card_author 同级 
+    enable: true # 默认就是 true；设 false 可整块关掉 
+    content: 关注塔菲喵,关注塔菲谢谢喵
