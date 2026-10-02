@@ -87,4 +87,5 @@ toc:
 inject:
   head:
     - '<style>body #page-header.not-home-page{height:100vh}</style>'
+category_img: /img/muzimi.jpg
 
