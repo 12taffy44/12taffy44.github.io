@@ -83,9 +83,9 @@ index_top_img_height: 100vh # 首页大图铺满首屏；想让它矮一点就�
 toc:
   page: true # 让页面（/recommend/、/about/ 等）也显示目录；文章默认就有
 
-# 注入自定义样式：内页顶部图铺满首屏（主题默认 400px，手机 280px）
+# 注入自定义样式：内页/文章页顶部图铺满首屏（主题默认 400px，手机 280px/360px）
 inject:
   head:
-    - '<style>body #page-header.not-home-page{height:100vh}</style>'
+    - '<style>body #page-header.not-home-page{height:100vh}body #page-header.post-bg{height:100vh}@media screen and (max-width:768px){body #page-header.post-bg{height:100vh}}</style>'
 category_img: /img/muzimi.jpg
 
